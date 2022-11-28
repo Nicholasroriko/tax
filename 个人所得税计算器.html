@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人所得税计算器</title>
+		<script>
+		function tax(){　　　　　　　　　　　　　　　　　　　　　
+		     var salary = prompt("请输入你的应纳税所得额");　　　　　　　　　
+		     var y = 0;　　　　　　　　　　　　　　　　　　　　　　
+		     if(salary<0){
+				 alert("输入有误，请重新输入")
+			 }else if(salary<=1500){　　　　　　　　　　　　　　　　　　 
+		         y=salary*0.03;　　　　　　　　　　　　　　　　　　　　　　　　
+		         alert("您的个人所得税是"+y+"元");　　　　　　　　　　　　　　　　　　　　　　
+		     }else if(salary<=4500){　　　　　　　　　　　　　　　　
+		         y=(salary)*0.1-105;　　　　　　　　　　　　　　　　
+		         alert("您的个人所得税是"+y+"元");　　　　　　　　　　　　　　　　　　　　　　
+		     }else if(salary<=9000){                                                          
+		         y=(salary)*0.2-255;　　　　　　　　　　　　　　　                
+		         alert("您的个人所得税是"+y+"元");　　　　　　　　　　　　　　　　　　　　　　
+		     }else if(salary<=35000){                    　　　　　　                  
+		         y=(salary)*0.25-1005;　　　　　　　　　　　　 
+		         alert("您的个人所得税是"+y+"元");　　　　　　　　　　　　　　　　　　　　　　 
+		     }else if(salary<=55000){                    　　　　　　                  
+		         y=(salary)*0.3-2775;　　　　　　　　　　　　 
+		         alert("您的个人所得税是"+y+"元");　　　　　　　　　　　　　　　　　　　　　　 
+		     }else if(salary<=80000){                    　　　　　　                  
+		         y=(salary)*0.35-5505;　　　　　　　　　　　　 
+		         alert(y);　　　　　　　　　　　　　　　　　　　　　　 
+		     }else{                    　　　　　　                  
+		         y=(salary)*0.45-13505;　　　　　　　　　　　　 
+		         alert("您的个人所得税是"+y+"元");　　　　　　　　　　　　　　　　　　　　　　 
+		     }
+		     }
+		    </script>
+		    <button onclick="tax()">个人所得税计算器</button>
+	</head>
+	<body>
+		
+	</body>
